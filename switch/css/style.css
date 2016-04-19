@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Gotham-thin;
+    src: url(../fonts/gotham-thin-webfont.woff);
+}
+.overlay-loader{
+	background-color: rgba(0,0,0,1);
+	z-index:100;
+	height:100%;
+	width:100%;
+	transition:0.5s;
+	opacity:1;
+	text-align: center;
+}
+.overlay-loader img{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18%;
+
+}
+.switch-item{
+	font-family: Gotham-thin;
+	height:100%;
+	background-color: rgba(33,33,33,.5);
+	text-align: center;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+.switch-text{
+font-size: 50px;
+color: #353535;
+
+}
+.switch button{
+	font-family: Gotham-thin;
+	font-size: 60px;
+	border: 1px solid #f6f6f6;
+	background:transparent;
+	color: #f6f6f6;
+	position: relative;
+	top:250px;
+	z-index:10;
+	transition:0.3s;
+}
+.switch .switch-background{
+height: 105%;
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	filter: blur(5px);
+top:0px;
+margin: -10px -20px -20px -10px;
+transition:0.3s;
+}
+.switch .switch-background-wrap{
+	    width: 33.33333333%;
+height: 100%;
+position:fixed;
+overflow: hidden;
+top:0;
+z-index:5;
+border: 1px solid #f6f6f6;
+}
+.main-sec{
+	padding: 0!important;
+	margin: 0!important;
+}
+#switch1 .switch-background{
+margin-left: -250px;
+}
+#switch2 .switch-background{
+margin-left:-550px;
+}
+#switch3 .switch-background{
+margin-left:-20px;
+}
+#switch3, #switch1{
+background-color: #333;
+}
+#switch2{
+background-color: #aeaeae;
+}
+#switch1:hover .switch-background{
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	filter: blur(15px);
+}
+#switch1:hover button{
+background:#f6f6f6;
+	color: #333333;
+}
+#switch2:hover .switch-background{
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	filter: blur(15px);
+}
+#switch2:hover button{
+background:#f6f6f6;
+	color: #333333;
+}
+#switch3:hover .switch-background{
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	filter: blur(5px);
+}
+#switch3:hover button{
+background:#f6f6f6;
+	color: #333333;
+}
+#switch1{
+	background: url('../img/bg-artb.jpg');
+	background-size: 350%;
+	background-repeat: no-repeat;
+	background-position: -250px;
+}
+#switch2{
+	background: url('../img/bg-lwlb.jpg');
+	background-size: 350%;
+	background-repeat: no-repeat;
+	background-position: -550px;
+}
+#switch3{
+	background: url('../img/bg-webb.jpg');
+	background-size: 280%;
+	background-repeat: no-repeat;
+	background-position: -20px;
+}
+img{
+	display:block;
+}
+
+@media screen and (max-width: 1000px) {
+.switch-item{
+	height: 33.333%;
+}
+.switch-item img{
+	display: none;
+}
+#switch1,#switch2,#switch3{
+	background-position: center;
+	background-repeat: repeat;
+}
+.switch-background-wrap{
+	display: none;
+	}
+
+.switch button{
+	font-family: Gotham-thin;
+	font-size: 65px;
+	top:41%;
+}
+.overlay-loader img{
+
+    margin-top: 40%;
+
+}
+
+}
