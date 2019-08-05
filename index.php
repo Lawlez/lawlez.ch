@@ -49,6 +49,6 @@ setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+3600);
 }
 }
 
-header('Location: http://lawlez.ch/switch');
+header('Location: /switch');
 exit;
 ?>
