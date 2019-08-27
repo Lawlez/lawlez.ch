@@ -25,7 +25,8 @@ $lastVisit = $_COOKIE['lastVisit'];
 
 }
 // set cookie for countVisit
-setcookie('countVisit', $countVisit++,  time()+3600);
+
+setcookie('countVisit', ++$countVisit,  time()+3600);
 // set cookie for last visit
 setcookie('lastVisit', date("d-m-Y H:i:s"),  time()+3600);
 
